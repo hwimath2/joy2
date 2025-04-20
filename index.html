@@ -390,13 +390,6 @@
       --option-selected-scale: 1.1;
       --option-hover-scale: 1.05;
 
-      /* ----- 주관식 피드백 효과 설정 ----- */
-      --correct-bg-color: rgba(46,204,113,0.2);     /* 정답 배경색 (20% 투명도) */
-      --correct-glow-color: rgba(46,204,113,0.5);   /* 정답 테두리 빛남 효과 (50% 투명도) */
-      --incorrect-bg-color: rgba(231,76,60,0.2);   /* 오답 배경색 (20% 투명도) */
-      --incorrect-glow-color: rgba(231,76,60,0.5);  /* 오답 테두리 빛남 효과 (50% 투명도) */
-      --answer-glow-intensity: 15px;            /* 테두리 빛남 효과 강도 */
-
       /* ----- 게임 플레이 요소 ----- */
       --progress-height: 20px;                /* 진행률 게이지 높이 */
       --progress-border-radius: 10px;         /* 진행률 게이지 테두리 둥글기 */
@@ -1439,16 +1432,16 @@
 
     /* 주관식 정답/오답 피드백 스타일 - 통일된 방식 */
     .answer-input.correct {
-      background-color: rgba(46,204,113,0.15) !important; /* 배경색 투명도 증가 */
-      border-color: rgba(46,204,113,0.6) !important; /* 테두리 투명도 증가 */
-      box-shadow: 0 0 20px rgba(46,204,113,0.4) !important; /* 그림자 투명도 증가 */
+      background-color: rgba(46,204,113,0.1) !important; /* 배경색 투명도 증가 */
+      border-color: rgba(46,204,113,0.3) !important; /* 테두리 투명도 증가 */
+      box-shadow: 0 0 15px rgba(46,204,113,0.2) !important; /* 그림자 투명도 증가 */
       animation: correctGlow 1.5s infinite alternate !important;
     }
 
     .answer-input.incorrect {
-      background-color: rgba(231,76,60,0.15) !important; /* 배경색 투명도 증가 */
-      border-color: rgba(231,76,60,0.6) !important; /* 테두리 투명도 증가 */
-      box-shadow: 0 0 20px rgba(231,76,60,0.4) !important; /* 그림자 투명도 증가 */
+      background-color: rgba(231,76,60,0.1) !important; /* 배경색 투명도 증가 */
+      border-color: rgba(231,76,60,0.3) !important; /* 테두리 투명도 증가 */
+      box-shadow: 0 0 15px rgba(231,76,60,0.2) !important; /* 그림자 투명도 증가 */
       animation: incorrectGlow 1.5s infinite alternate !important;
     }
 
@@ -1981,10 +1974,10 @@
   </style>
 </head>
 <body>
-  <div class="love-text"><span>서율아 사랑해</span> <span class="heart">❤️</span></div>
-  <div class="love-text"><span>서율아 사랑해</span> <span class="heart">❤️</span></div>
-  <div class="love-text"><span>서율아 사랑해</span> <span class="heart">❤️</span></div>
-  <div class="love-text"><span>서율아 사랑해</span> <span class="heart">❤️</span></div>
+  <div class="love-text"><span>율아 사랑해~</span> <span class="heart">❤️</span></div>
+  <div class="love-text"><span>율아 사랑해~</span> <span class="heart">❤️</span></div>
+  <div class="love-text"><span>율아 사랑해~</span> <span class="heart">❤️</span></div>
+  <div class="love-text"><span>율아 사랑해~</span> <span class="heart">❤️</span></div>
   <div class="banner" id="banner"></div>
   <h1 id="gameTitle"></h1>
   <div class="loading-spinner" id="loadingSpinner">
@@ -1992,7 +1985,7 @@
   </div>
   <div class="container">
     <div id="startSection">
-      <h2 class="start-title">서율아 게임을 시작해볼까?</h2>
+      <h2 class="start-title">율아~ 게임을 시작해볼까?</h2>
       <div>
         <button class="btn" id="startButton">게임시작</button>
       </div>
